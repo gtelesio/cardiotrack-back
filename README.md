@@ -1,6 +1,10 @@
 # node-base-project-hexagonal
 
-Base project in nest js with hexagonal architecture for nodejs
+- Base project in nest js with hexagonal architecture for nodejs.
+- This base project supports migrations and seeders with TypeOrm.
+- Auto documentation with swagger.
+- Unit test & test e2e.
+
 
 # Collaborators
 

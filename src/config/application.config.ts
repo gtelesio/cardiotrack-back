@@ -7,4 +7,5 @@ export const appConfig = cleanEnv(process.env, {
     default:
       'mongodb+srv://gtelesio:XzmV4hSRbdm9OlIf@cluster0.58fmlz6.mongodb.net/?retryWrites=true&w=majority',
   }),
+  MOVING_AVERAGE: num({ default: 13 }),
 });

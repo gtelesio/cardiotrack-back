@@ -4,6 +4,7 @@ import { AcceptLanguageResolver, I18nModule, QueryResolver } from 'nestjs-i18n';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import typeOrmConfig from '@shared/infra/orm/typeorm/typeorm-datasource';
 import { HealthModule } from '@modules/health/health.module';
+import { MeasuresModule } from '@modules/measures/measures.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { HealthModule } from '@modules/health/health.module';
     }),
     TypeOrmModule.forRoot(typeOrmConfig.options),
     HealthModule,
+    MeasuresModule,
   ],
 })
 export class AppModule {}

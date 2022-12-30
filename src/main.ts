@@ -19,6 +19,8 @@ const bootstrap = async (): Promise<void> => {
     type: VersioningType.URI,
   });
 
+  app.enableCors();
+
   appConfig.isDevelopment && swaggerConfig(app);
 
   const port = appConfig.PORT;
